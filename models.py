@@ -9,6 +9,7 @@ class Team():
     
     self.goals_for = 0
     self.goals_against = 0
+    self.recent_results = []
     
 class Match():
   def __init__(self, match_id, home_team, away_team):
@@ -20,7 +21,7 @@ class Match():
     self.away_score = 0
     
     self.minute = 0
-    self.status = ""
+    self.status = "Not Started"
     
 class Prediction():
   def __init__(self, home_probability, draw_probability, away_probability):
