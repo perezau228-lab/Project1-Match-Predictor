@@ -20,6 +20,14 @@ class Team():
   
   def goal_difference(self):
     return self.goals_for - self.goals_against
+
+  def record_result(self, goals_for, goals_against, game_result):
+    if game_result == "W":
+      self.wins += 1
+    elif game_result == "D":
+      self.draw += 1
+    elif game_result == "L":
+      self.losses += 1
     
 class Match():
   def __init__(self, match_id, home_team, away_team):
