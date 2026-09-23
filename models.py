@@ -17,6 +17,9 @@ class Team():
         return 0
     else:
         return self.wins / matches_played
+  
+  def goal_difference(self):
+    return self.goals_for - self.goals_against
     
 class Match():
   def __init__(self, match_id, home_team, away_team):
