@@ -10,6 +10,13 @@ class Team():
     self.goals_for = 0
     self.goals_against = 0
     self.recent_results = []
+  
+  def win_rate(self):
+    matches_played = self.wins + self.draw + self.losses
+    if matches_played == 0:
+        return 0
+    else:
+        return self.wins / matches_played
     
 class Match():
   def __init__(self, match_id, home_team, away_team):
