@@ -10,5 +10,8 @@ class Precictor():
     away_probability = away_strength / total
 
     draw_probability = 1 - home_probability - away_probability
-
-    return{"home","draw","away"}
+    
+    return{"home": home_probability,"draw": draw_probability,"away": away_probability}
+    
+ def calculate_strength(self, team):
+    pass
