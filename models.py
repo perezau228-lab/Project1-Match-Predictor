@@ -22,6 +22,10 @@ class Team():
     return self.goals_for - self.goals_against
 
   def record_result(self, goals_for, goals_against, game_result):
+    self.goals_for += goals_for
+    self.goals_against += goals_against
+    self.game_result.append(game_result)
+    
     if game_result == "W":
       self.wins += 1
     elif game_result == "D":
